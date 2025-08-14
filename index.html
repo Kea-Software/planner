@@ -26,7 +26,7 @@
   <meta name="apple-mobile-web-app-title" content="agenda_2025">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-   <!-- Open Graph for messanger apps -->
+  <!-- Open Graph for messanger apps -->
   <meta property="og:title" content="Kea Software Planner" />
   <meta property="og:description" content="Easily track test, deadlines and school events in one place. Plan smarter and never miss an assignment again!" />
   <meta property="og:image" content="favicon.png" />
@@ -38,8 +38,53 @@
 
   <title>Planner</title>
   <link rel="manifest" href="manifest.json">
+  <style id="splash-screen-style">
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #ffffff;
+      background-size: 100% 100%;
+    }
+
+    #splash {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .loader {
+      margin-top: 20px;
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #555;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script id="splash-screen-script">
+    function removeSplashFromWeb() {
+      document.getElementById("splash")?.remove();
+      document.getElementById("splash-branding")?.remove();
+      document.body.style.background = "transparent";
+    }
+  </script>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 </head>
 <body>
+  <div id="splash">
+    <img aria-hidden="true" src="kea-software.png" alt="" style="max-width: 80%; height: 30%;">
+    <div class="loader" aria-hidden="true"></div>
+  </div>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
