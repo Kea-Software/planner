@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
 const RESOURCES = {"kea-software.png": "8bb30dcf2cba693862423eba16bafb4e",
-"flutter_bootstrap.js": "c3afd0d872f092b7f0dff25bc069064b",
+"flutter_bootstrap.js": "918d2d89a174a126d11f043e8443d105",
 "flutter.js": "76f08d47ff9f5715220992f993002504",
 "favicon.png": "3a7fb42b0d5cc6d2c4b918b4cba318f5",
 "manifest.json": "7505206dcca45672fe82d44d5c49d886",
