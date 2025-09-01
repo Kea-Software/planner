@@ -97339,7 +97339,7 @@ A.dN.prototype={}
 A.c8.prototype={
 m9(){var s=0,r=A.H(t.y),q
 var $async$m9=A.D(function(a,b){if(a===1)return A.E(b,r)
-while(true)switch(s){case 0:if(B.f.d2(new A.bf(Date.now(),0,!1).fJ($.aUp()).a,6e7)>2){self.window.location.reload()
+while(true)switch(s){case 0:if(B.f.d2(new A.bf(Date.now(),0,!1).fJ($.aUp()).a,6e7)<2){self.window.location.reload()
 q=!0
 s=1
 break}else{q=!1
