@@ -101579,7 +101579,7 @@ atP(a){var s,r,q,p,o=this,n=null,m=A.C(A.n("ask_cal"),n,n,n,n,n,n,n,n),l=o.x,k=A
 m=A.ka(o.w,A.a2(new A.a0(l,new A.aeR(o),k),!0,k.i("af.E")),B.E,n,n,m,new A.aeS(o,a),!0,B.b6,B.c1,t.ue)
 l=o.z[a]
 k=l.c
-k=k!==""?new A.F1("https://classhub-server.freeddns.org/api/v2/calendar_feed/config/"+k+".ics",-1,200,n):A.cM(n)
+k=k!==""?new A.F1("https://classhub-server.freeddns.org/api/stable-v0.4/calendar_feed/config/"+k+".ics",-1,200,n):A.cM(n)
 s=$.a4u()
 s=o.ZX(new A.aeT(o,a),l.e,s,"Subjects")
 l=$.a4n()
